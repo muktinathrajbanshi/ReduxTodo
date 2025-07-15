@@ -54,6 +54,16 @@
 }
 
 .addItems i {
-  color: #22a6b3;
   position: absolute;
+  margin-right: 0.5rem;
+}
+
+.addItems i:hover {
+  cursor: pointer;
+  color: #22a6b3;
+  transition: 0.3sec all;
+  -webkit-transition: 0.3sec all;
+  -moz-transition: 0.3sec all;
+  -ms-transition: 0.3sec all;
+  -o-transition: 0.3sec all;
 }
