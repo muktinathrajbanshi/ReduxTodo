@@ -112,3 +112,35 @@
   cursor: pointer;
   color: red;
 }
+
+.showItems .effect04 {
+  width: 8rem;
+  font-size: 1rem;
+  padding: 0.5rem;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.showItems .effect04::before {
+  content: attr(data-sm-link-text);
+  text-transform: capitalize;
+  position: absolute;
+  color: #fff;
+  outline: none;
+  border: none;
+  opacity: 0;
+  pointer-events: none;
+}
+.showItems .effect04:hover {
+  background-color: #3867d6;
+  color: transparent;
+}
+
+.showItems .effect04:hover span {
+  opacity: 0;
+}
+
+.showItems .effect04:hover::before {
+  opacity: 1;
+}

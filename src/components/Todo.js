@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {useSelector, useDispatch} from "react-redux";
-import {addTodo, deleteTodo} from "../actions/index";
+import {addTodo, deleteTodo, removeTodo} from "../actions/index";
 import "./todo.css";
 
 
@@ -38,6 +38,11 @@ const Todo = () => {
             }
 
            </div> 
+           <div className="showItems">
+            <button className="btn effect04" data-sm-link-text="remove All"
+            onClick={() => dispatch(removeTodo())}
+            ><span>Check List</span></button>
+           </div>
         </div>
       </div>
     </>

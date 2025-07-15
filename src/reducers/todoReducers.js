@@ -23,6 +23,12 @@ const todoReducers = (state=initialData, action) => {
             ... state,
             list: newList
          }
+
+         case "REMOVE_TODO": return {
+            ... state,
+            list: []
+         }
+
          default: return state;
     }
 }
