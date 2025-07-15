@@ -67,3 +67,47 @@
   -ms-transition: 0.3sec all;
   -o-transition: 0.3sec all;
 }
+
+.child-div .showItems {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.showItems .eachItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 23rem;
+  height: 2.5rem;
+  outline: none;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  background: #3867d6;
+  color: #fff;
+  padding: 0 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.showItems .eachItem:hover {
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.eachItem h3 {
+  font-size: 1.1rem;
+  font-weight: lighter;
+}
+
+.eachItem:hover h3 {
+  color: #000;
+}
+
+.eachItem:hover i {
+  color: red;
+}
