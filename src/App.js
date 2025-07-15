@@ -1,9 +1,10 @@
 import React from 'react';
+import Todo from './components/Todo';
 
 const App = () => {
   return (
     <>
-      <h1>Hello, Welcome to my new project!</h1>
+      <Todo />
     </>
   );
 };
