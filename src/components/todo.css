@@ -3,3 +3,57 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.main-div {
+  width: 100vw;
+  height: 100vh;
+  background-color: #130f40;
+  display: flex;
+  justify-content: center;
+}
+
+.main-div .child-div {
+  width: 80%;
+  height: 50%;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.child-div figure {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.child-div figcaption {
+  font-size: 1.2rem;
+  font-weight: lighter;
+  letter-spacing: 1px;
+}
+
+.child-div .addItems {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.addItems input {
+  width: 23rem;
+  height: 2.5rem;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  padding: 0 0.5rem;
+  position: relative;
+}
+
+.addItems i {
+  color: #22a6b3;
+  position: absolute;
+}
