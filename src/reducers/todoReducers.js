@@ -5,7 +5,6 @@ const initialData = {
 const todoReducers = (state=initialData, action) => {
     switch(action.type) {
         case "ADD_TODO":
-
          const {id, data} = action.payload;
          return {
             ... state,
@@ -16,6 +15,13 @@ const todoReducers = (state=initialData, action) => {
                     data:data
                 }
              ]
+         }
+
+         case "DELETE_TODO":
+         const newList = state.list.filter((elem) => elem.id !== action.id)
+         return {
+            ... state,
+            list: newList
          }
          default: return state;
     }

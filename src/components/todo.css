@@ -13,13 +13,14 @@
 }
 
 .main-div .child-div {
-  width: 80%;
+  width: 50%;
   height: 50%;
   /* border: 1px solid red; */
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  margin-top: 2rem;
 }
 
 .child-div figure {
@@ -96,7 +97,6 @@
 
 .showItems .eachItem:hover {
   background-color: #fff;
-  cursor: pointer;
 }
 
 .eachItem h3 {
@@ -109,5 +109,6 @@
 }
 
 .eachItem:hover i {
+  cursor: pointer;
   color: red;
 }
